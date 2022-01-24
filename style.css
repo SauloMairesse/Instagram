@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    display: flex;
+    background-color: #FAFAFA;
+    justify-content: center;
+}
+
+/* -----TOPO DO SITE----- */
+
+.barra{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 54px;
+    background-color:#FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+    z-index: 10;
+}
+.topo-mobile{display: none;}
+
+.topo{
+    position: fixed;
+    width: 932px;
+    height: 54px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.topo div{
+    display: flex;
+    align-items: center;
+} 
+.topo img {
+    width: 103px;
+    height: 29px;
+}
+.barra-de-pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 28px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+}
+.barra-de-pesquisa p{
+    color: #979797;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.traco{
+    height: 22px;
+    width: 1px;
+    background-color:#DBDBDB;
+    margin: 0 10px 0 11px;
+}
+.custom-icon{
+    font-size: 21px;
+    border: 1,38px solid #000000;
+}
+.margem{
+    margin-left: 25px;
+}
+
+/* -----------------------------*/
+
+/* esqueleto da página */
+.corpo{
+    margin-top: 88px;
+    width: 1366px;
+    height: 100%;
+}
+.inferior{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.conteudo{
+    margin-left: 216px;
+    width: 614px;
+    height: 100%;
+    margin-right: auto;
+}
+
+/* ----------------------- */
+
+/* -----STORIES----- */
+
+.stories{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 599px;
+    height: 118px;
+    margin-bottom: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    padding-left: 13px;
+    position: relative;
+}
+.setinha-do-stories{
+    position: relative;
+    right: 12%;
+    z-index: 4;
+}
+.storie-individuo{
+    margin-right: 2px;
+    height: 85px;
+    width: 78px;
+}
+.centralizar-imagem{
+    object-fit: cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+.individuo{
+    width: 78px;
+    height: 19px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 89%;
+}
+.borda-status{
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    position: absolute;
+}
+.foto-perfil{
+    object-fit: cover;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    position: absolute;
+    margin-top: 5px;
+}
+
+/*---------------------------------*/
+
+/* ----- COMEÇO DO FEED----- */
+
+.caixa{
+    width: 612px;
+    height: 749px;
+    margin-bottom: 60px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+.quem-posta{
+    padding: 0 17px 0 17px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-bottom: #DBDBDB;
+    border-radius: 3px;
+}
+.quem-posta img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 15px;
+}
+.quem-posta p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.quem-posta div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post{
+    height: 612px;
+    background-color: burlywood;
+}
+.post img{
+    object-fit: cover;
+    width: 612px;
+    height: 612px;
+}
+.interacao-post{
+    height: 75px;
+    background-color: #FFFFFF;
+}
+.icones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18px;
+    padding: 14px 17.75px 14px 17.75px;
+}
+.icones-trio{
+    width: 93px;
+    display: flex;
+    justify-content: space-between;
+}
+.comentarios{
+    padding: 0 17px 0 17px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.comentarios img{
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 7px;
+}
+.comentarios p{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* --------------------------------- */
+
+/* CAIXA LATERAL DO INSTAGRAM*/
+
+.lateral{
+    position: fixed;
+    left: calc(50% + 171px);
+    top: 109px;
+    width: 293px;
+}
+.pessoa{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 255px;
+    margin-bottom: 24px;
+}
+.pessoa img{
+    object-fit: cover;
+    width: 56px;
+    height: 56px;
+    margin-right: 17px;
+    border-radius: 28px;
+}
+.pessoa h1{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #262626;
+}
+.pessoa h2{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8E8E8E;
+}
+.sugestaoparavoce{
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;    
+}
+.sugestaoparavoce h1{
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8E8E8E;
+}
+.sugestaoparavoce h2{
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #262626;
+}
+.sugestao{
+    display: flex;
+    height: 32px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.info-sugestao{
+    display: flex;
+}
+.info-sugestao img{
+    object-fit: cover;
+    margin-right: 11px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+.info-sugestao h1{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #262626;
+}
+.info-sugestao h2{
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8E8E8E;
+}
+.sugestao p{
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #139EF2;
+}
+.textinhos-do-insta{
+    margin-top: 33px;
+}
+.textinhos-do-insta h1{
+    font-family: Roboto;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 18px;
+    color: #C7C7C7;
+}
+.textinhos-do-insta h2{
+    font-family: Roboto;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #C7C7C7;
+}
+/* ----------------------------- */
+
+/* Barra-inferior para mobile */
+
+.barra-inferior-mobile{display: none;}
+
+/* ---------------------------- */
+
+/* ----- COMEÇO NOVAS TELAS ----- */
+
+@media(max-width: 935px){
+    .lateral{
+        display: none;
+    }
+    .conteudo{
+        margin: auto;
+    }
+    .topo{
+        width: 100%;
+    }
+}
+@media(max-width: 614px){
+    .topo{
+        display: none;
+    }
+    .topo-mobile{
+        position: fixed;
+        width: 100%;
+        height: 54px;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #DBDBDB;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 10;
+    }
+    .margem-mobile-esquerda{
+        margin-left: 21px;
+    }
+    .margem-mobile-direita{
+        margin-right: 18px;
+    }
+    .corpo{
+        margin-top: 54px;
+        justify-content: center;
+    }
+    .stories{
+        background: none;
+        border: none;
+        margin-bottom: 0px;
+    }
+    .barra-inferior-mobile{
+        width: 100vw;
+        height: 54px;
+        position: fixed;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 0; 
+    }
+    .setinha-do-stories{
+        display: none;
+    }
+}
